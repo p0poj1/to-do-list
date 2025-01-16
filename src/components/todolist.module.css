@@ -1,0 +1,8 @@
+/* Style the todo list items */
+.list {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  list-style: none;
+  padding: 12px;
+}

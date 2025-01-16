@@ -1,0 +1,29 @@
+.item {
+  /* font-family: sans-serif;
+  font-weight: bold; */
+  padding: 20px;
+  margin: 5px 0;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  border-radius: 4px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item:nth-child(odd) {
+  background-color: #e9ecef;
+}
+
+.delete {
+  float: right;
+  padding: 12px 20px;
+  border: none;
+  background-color: royalblue;
+  color: white;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
