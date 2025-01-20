@@ -1,0 +1,38 @@
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--daisy-bg-base-100, #ffffff);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--daisy-primary, #007bff);
+}
+
+/* Nav links container */
+.navLinks {
+  display: flex;
+  gap: 10px;
+}
+
+/* Individual nav link */
+.navLink {
+  text-decoration: none;
+  color: var(--daisy-primary-text, #007bff);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: var(--daisy-primary-light, #e7f3ff);
+  color: var(--daisy-primary-hover, #0056b3);
+}
