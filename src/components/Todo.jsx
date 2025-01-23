@@ -6,11 +6,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Todo() {
-  const [todos, setTodos] = useState(() => {
-    const savedTodos = localStorage.getItem("list");
-    return savedTodos ? JSON.parse(savedTodos) : [];
-  });
-
+  const [todos, setTodos] = useState([]);
   const completedTodos = todos.filter((todo) => todo.done).length;
   const totalTodos = todos.length;
   const navigation = useNavigate();

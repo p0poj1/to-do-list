@@ -2,14 +2,19 @@ import { useState } from "react";
 import styles from "./form.module.css";
 
 export default function Form({ todos, setTodos }) {
-  // const [todo, setTodo] = useState("");
   const [todo, setTodo] = useState({ name: "", done: false });
 
   function handleSubmit(e) {
     e.preventDefault();
-    setTodos([...todos, todo]); // Add new todo
-    localStorage.setItem("list", todo.name);
-    console.log(todo);
+    // To prevent empty todos
+    if (!todo.name.trim()) return;
+    const updatedTodos = [...todos, todo];
+    setTodos(updatedTodos);
+
+    // Save updated todos to local storage
+    localStorage.setItem("list", JSON.stringify(updatedTodos));
+    // console.log(todo);
+
     setTodo({ name: "", done: false }); // Clear the input field
   }
 

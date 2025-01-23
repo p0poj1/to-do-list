@@ -7,12 +7,14 @@ export default function TodoList({ todos, setTodos }) {
     .sort((a, b) => Number(a.done) - Number(b.done));
   return (
     <div className={styles.list}>
-      {sortedTodos.map((item) => (
+      {sortedTodos.map((item, index) => (
         <TodoItem
-          key={item.name}
+          // key={item.name}
+          key={index}
           item={item}
           todos={todos}
           setTodos={setTodos}
+          index={index} // Pass index for better handling in 'TodoItem'
         />
       ))}
     </div>

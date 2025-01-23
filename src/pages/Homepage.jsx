@@ -15,7 +15,7 @@ export default function Homepage() {
 
       {/* Dashboard Section */}
       <section className={styles.section}>
-        <h2>Menu</h2>
+        <h2 className={styles.menu}>Menu</h2>
         <div className={styles.projectList}>
           {/* View dashboard contents */}
           <div className={styles.projectCard}>
