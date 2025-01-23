@@ -8,6 +8,8 @@ export default function Form({ todos, setTodos }) {
   function handleSubmit(e) {
     e.preventDefault();
     setTodos([...todos, todo]); // Add new todo
+    localStorage.setItem("list", todo.name);
+    console.log(todo);
     setTodo({ name: "", done: false }); // Clear the input field
   }
 

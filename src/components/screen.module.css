@@ -1,0 +1,11 @@
+.screen {
+    margin-bottom: 20px;
+  }
+  
+  .screen input {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1rem;
+  }

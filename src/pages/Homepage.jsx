@@ -7,28 +7,21 @@ export default function Homepage() {
     <div className={styles.container}>
       {/* Hero Section */}
       <header className={styles.header}>
-        <h1 className={styles.title}>Welcome to My Dashboard</h1>
-        <p className={styles.subtitle}>Your hub for all projects and progress.</p>
+        <h1 className={styles.title}>Welcome to My CodeX</h1>
+        <p className={styles.subtitle}>
+          Your hub for all projects and progress.
+        </p>
       </header>
 
-      {/* Projects Section */}
+      {/* Dashboard Section */}
       <section className={styles.section}>
-        <h2>Projects:</h2>
+        <h2>Menu</h2>
         <div className={styles.projectList}>
-          {/* Project 1 */}
+          {/* View dashboard contents */}
           <div className={styles.projectCard}>
-            <h3 className={styles.projectTitle}>Project 1</h3>
-            <p className={styles.projectDescription}>To-Do-List</p>
-            <Link to="/dashboard/to-do-list" className={styles.button}>
-              View
-            </Link>
-          </div>
-
-          {/* Project 2 */}
-          <div className={styles.projectCard}>
-            <h3 className={styles.projectTitle}>Project 2</h3>
-            <p className={styles.projectDescription}>Functional Calculator</p>
-            <Link to="/dashboard/project2" className={styles.button}>
+            <h3 className={styles.projectTitle}>Dashboard</h3>
+            <p className={styles.projectDescription}>List of Projects</p>
+            <Link to="/dashboard" className={styles.button}>
               View
             </Link>
           </div>
