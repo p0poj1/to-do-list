@@ -17,3 +17,31 @@
   font-weight: bold;
   background-color: turquoise;
 }
+
+/* Button styling */
+.btn {
+  background-color: var(--daisy-primary, #007bff);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--daisy-primary-hover, #0056b3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  background-color: var(--daisy-primary-active, #003d80);
+}
+
+.btn:focus {
+  outline: 2px solid var(--daisy-primary-focus, #80bdff);
+  outline-offset: 2px;
+}

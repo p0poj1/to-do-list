@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./calc.module.css";
 import CalcScreen from "./Screen";
 import ButtonRow from "./ButtonRow";
@@ -35,11 +35,21 @@ export default function Calculator() {
     }
   };
 
+  const navigation = useNavigate();
+  function handleClickTodo() {
+    navigation("/to-do-list");
+  }
+
   return (
     <div className={styles.calculator}>
       <h2>My Calculator</h2>
       <CalcScreen input={input} result={result} />
       <ButtonRow handleClick={handleClick} />
+      <li>
+        <button onClick={handleClickTodo} className={styles.btn}>
+          Go to Project 1 (To Do List)
+        </button>
+      </li>
     </div>
   );
 }

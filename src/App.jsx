@@ -13,10 +13,9 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/dashboard" element={<Dashboard />}>
-            <Route path="to-do-list" element={<Todo />} />
-            <Route path="calc" element={<Calculator />} />
-          </Route>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/to-do-list" element={<Todo />} />
+          <Route path="/calc" element={<Calculator />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
