@@ -1,4 +1,4 @@
-import styles from "./buttonrow.module.css"
+import styles from "./buttonrow.module.css";
 export default function ButtonRow({ handleClick }) {
   const buttons = [
     ["7", "8", "9", "/"],
