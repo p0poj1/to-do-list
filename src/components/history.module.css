@@ -1,0 +1,28 @@
+/* .historyTitle {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.history h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+} */
+.history {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  

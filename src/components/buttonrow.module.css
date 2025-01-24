@@ -1,26 +1,49 @@
 .buttonRow {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    flex: 1;
-    margin: 0 5px;
-    padding: 10px;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.buttonRow button {
+  width: 60px; /* Set a fixed width */
+  height: 60px; /* Set a fixed height */
+  font-size: 18px; /* Adjust text size for readability */
+  border: 1px solid #ccc; /* Add optional border for structure */
+  border-radius: 5px; /* Optional rounded corners */
+  background-color: #007bff; /* Default background color */
+  cursor: pointer;
+}
+
+.buttonRow button:hover {
+  background-color: #0056b3;
+}
+
+.buttonRow .clearButton {
+  background-color: yellow;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.buttonRow .clearButton:hover {
+  background-color: rgb(170, 180, 0);
+}
+
+.buttonRow .operationButton {
+  background-color: #28a745; /* Green for operations */
+  color: white;
+  font-weight: bold;
+}
+
+.buttonRow .operationButton:hover {
+  background-color: #218838; /* Darker green on hover */
+}

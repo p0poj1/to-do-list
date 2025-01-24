@@ -1,4 +1,4 @@
-import styles from "./screen.module.css"
+import styles from "./screen.module.css";
 export default function CalcScreen({ input, result }) {
   return (
     <div className={styles.screen}>

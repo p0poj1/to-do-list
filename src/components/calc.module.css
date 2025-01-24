@@ -35,3 +35,7 @@
   outline: 2px solid var(--daisy-primary-focus, #80bdff);
   outline-offset: 2px;
 }
+
+.calculator li {
+  list-style: none;
+}
