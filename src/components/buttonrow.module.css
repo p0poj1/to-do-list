@@ -10,14 +10,19 @@
 }
 
 .buttonRow button {
-  width: 60px; /* Set a fixed width */
-  height: 60px; /* Set a fixed height */
-  font-size: 18px; /* Adjust text size for readability */
-  border: 1px solid #ccc; /* Add optional border for structure */
-  border-radius: 5px; /* Optional rounded corners */
-  background-color: #007bff; /* Default background color */
+  width: 60px; /* Ensure buttons are consistently sized */
+  height: 60px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #007bff;
   cursor: pointer;
+  display: flex; /* Flexbox for centering */
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding for alignment */
 }
+
 
 .buttonRow button:hover {
   background-color: #0056b3;
@@ -25,7 +30,7 @@
 
 .buttonRow .clearButton {
   background-color: yellow;
-  color: white;
+  color: rgb(255, 45, 45);
   border: none;
   border-radius: 5px;
   padding: 10px 20px;

@@ -37,7 +37,7 @@ export default function Calculator() {
         setResult("Math Error");
         setInput("");
       }
-    } else if (value === "c") {
+    } else if (value === "Clear") {
       setInput("");
       setResult("");
     } else {

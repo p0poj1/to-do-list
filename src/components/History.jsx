@@ -10,6 +10,8 @@ export default function History({ history, setHistory }) {
   return (
     <div className={styles.history}>
       <h3>Calculation History</h3>
+      <h2>'Enter' : =</h2>
+      <h2>'C' : Clear</h2>
 
       <button className="btn btn-ghost btn-sm" onClick={clearHistory}>
         Clear history

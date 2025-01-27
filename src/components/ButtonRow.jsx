@@ -4,7 +4,7 @@ export default function ButtonRow({ handleClick }) {
     ["7", "8", "9", "/"],
     ["4", "5", "6", "*"],
     ["1", "2", "3", "-"],
-    ["C", "0", "=", "+"],
+    ["Clear", "0", "=", "+"],
   ];
   return (
     <div className={styles.buttonRow}>
@@ -15,7 +15,7 @@ export default function ButtonRow({ handleClick }) {
               key={item}
               onClick={() => handleClick(item)}
               className={
-                item === "C"
+                item === "Clear"
                   ? styles.clearButton
                   : ["+", "-", "*", "/"].includes(item)
                   ? styles.operationButton
